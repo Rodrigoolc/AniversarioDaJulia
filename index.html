@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Convite Aniversário</title>
-</head>
-<body style="margin:0; background:#000;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Convite - Aniversário da Julia">
+<meta property="og:description" content="Você está convidado para comemorar esse dia especial!">
+<meta property="og:image" content="https://seusite.com/img/preview.png">
+<meta property="og:url" content="https://seusite.com">
+<meta property="og:type" content="website">
+<title>Convite Julia</title>
 
-<div style="position: relative; width: 100%; height: 0; padding-top: 177.7778%;">
-  <iframe 
-    loading="lazy"
-    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
-    src="https://www.canva.com/design/DAHIbBQ5JkI/7VQ0al64pBOKlTjZWxLMYQ/view?embed"
-    allowfullscreen>
-  </iframe>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #fde9ee;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 9 / 16; /* mantém proporção */
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* PRESENTES */
+.presentes {
+  left: 12%;
+  bottom: 12%;
+  width: 18%;
+}
+
+/* CONFIRMAR */
+.confirmar {
+  left: 41%;
+  bottom: 12%;
+  width: 18%;
+}
+
+/* ENDEREÇO */
+.endereco {
+  left: 70%;
+  bottom: 12%;
+  width: 18%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <video autoplay loop muted playsinline>
+    <source src="img/convite.mp4" type="video/mp4">
+  </video>
+
+  <a href="presentes.html" class="btn presentes">
+    <img src="icon/presentes.png"
+  </a>
+  
+  <a href="https://wa.me/5533999499319?text=Oi!%20Confirmo%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20da%20Julia.%20Obrigado%20pelo%20convite!" 
+  class="btn confirmar">
+
+    <img src="icon/presenca.png"
+  </a>
+
+  <a href="https://www.google.com/maps/place/S%C3%ADtio+Vov%C3%B3+Alice+Ines/@-19.7363936,-42.4151682,700m/data=!3m2!1e3!4b1!4m6!3m5!1s0xbab101290ddadb:0x4690d34c9aedd810!8m2!3d-19.7363936!4d-42.4151682!16s%2Fg%2F11vkkwmf5v?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" 
+  class="btn endereco">
+
+    <img src="icon/endereco.png"
+  </a>
+
 </div>
+
 
 </body>
 </html>
